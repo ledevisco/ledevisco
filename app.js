@@ -244,7 +244,7 @@ async function loadAnnonces() {
       html += '<div style="text-align:right;"><span style="background:#e8faf5;color:#00C896;font-size:0.78rem;font-weight:700;padding:4px 10px;border-radius:20px;">Termine</span><div style="font-size:0.82rem;color:#00C896;font-weight:700;margin-top:4px;">-'+a.economie+'EUR economise</div></div>';
     } else {
       html += '<div><div class="devis-label">Devis initial</div><div class="devis-amount">'+a.montant.toLocaleString('fr-FR')+'EUR</div></div>';
-      html += '<button class="card-cta" onclick="event.stopPropagation();openAnnonceDetail(\"'+a.id+'\",'+a.montant+')">Proposer</button>';
+      html += '<button class="card-cta" onclick="event.stopPropagation();openAnnonceDetail(\''+a.id+'\','+a.montant+')">Proposer</button>';
     }
     html += '</div>';
     html += '<div class="responses-count">'+ageStr+(a.fichier_url ? ' - <a href="'+a.fichier_url+'" target="_blank" style="color:var(--accent);">Voir le devis</a>' : '')+'</div>';
